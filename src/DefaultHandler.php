@@ -9,8 +9,8 @@ class DefaultHandler implements Handler
 {
     public function handle(array $config): ?Authenticatable
     {
-        if ($config['id']) {
-            return Auth::check() ? null : Auth::loginUsingId(config('id'));
+        if ($config['id'] && !Auth::check()) {
+            return Auth::loginUsingId($config['id']) ?? null;
         }
 
         return null;
