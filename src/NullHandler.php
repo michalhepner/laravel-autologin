@@ -1,6 +1,6 @@
 <?php
 
-namespace Michalhepner\LaravelAutologin;
+namespace MichalHepner\LaravelAutologin;
 
 use Illuminate\Contracts\Auth\Authenticatable;
 

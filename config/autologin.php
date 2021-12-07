@@ -1,7 +1,7 @@
 <?php
 
 use MichalHepner\LaravelAutologin\DefaultHandler;
-use Michalhepner\LaravelAutologin\NullHandler;
+use MichalHepner\LaravelAutologin\NullHandler;
 
 return [
     'redirect' => env('AUTOLOGIN_REDIRECT'),
