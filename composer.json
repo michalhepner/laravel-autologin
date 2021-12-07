@@ -1,0 +1,28 @@
+{
+    "name": "michalhepner/laravel-autologin",
+    "description": "Allows to automatically login with a configured user",
+    "type": "library",
+    "license": "GNU GPLv3",
+    "autoload": {
+        "psr-4": {
+            "MichalHepner\\LaravelAutologin\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Michał Hepner",
+            "email": "michal.hepner@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MichalHepner\\LaravelAutologin\\ServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "php": "^7.1|^8",
+        "laravel/framework": "^7|^8"
+    }
+}
