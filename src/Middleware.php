@@ -23,13 +23,13 @@ class Middleware
 
     protected function getHandler(): Handler
     {
-        $handlerClass = config(sprintf('autologin.user.handlers.%s.class', config('autologin.user.handler')));
+        $handlerClass = config(sprintf('autologin.handlers.%s.class', config('autologin.handler')));
 
         return app()->make($handlerClass);
     }
 
     protected function getConfig(): array
     {
-        return config(sprintf('autologin.user.handlers.%s.config', config('autologin.user.handler')), []);
+        return config(sprintf('autologin.handlers.%s.config', config('autologin.handler')), []);
     }
 }
