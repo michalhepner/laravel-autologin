@@ -25,3 +25,4 @@ Homestead.json
 /composer.lock
 
 .idea
+/.phpunit.cache
